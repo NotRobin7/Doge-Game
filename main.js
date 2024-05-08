@@ -278,7 +278,6 @@ function gameLoop() {
 
 // Start the game loop
  gameloop();
-alert('kumpulkan score sebanyak 5 untuk upgrade doge')
 
 
 // Optional: Add functionality to toggle sidebar

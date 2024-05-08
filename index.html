@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racing Car</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sidebar" id="sidebar">
+    <button onclick="closeSidebar()" class="button-c">
+  <span class="X"></span>
+  <span class="Y"></span>
+  <div class="close">Close</div>
+</button>
+
+  <!--   <button class="close" class="close-btn" onclick="closeSidebar()">&times;</button> -->
+    <h4>Contact Developer</h4>
+    <div class="form-container">
+       <form onsubmit="kirim()">
+    <label for="name">Nama:</label>
+    <input id="nama" type="text" id="name" name="name" placeholder="Masukan nama anda">
+
+    <label for="name">Pesan:</label>
+    <input id="pesan" type="text" id="email" name="email" placeholder="Masukan pesan anda">
+
+    <button class="btn-f" type="submit">Kirim</button>
+  </form>
+    </div>
+  </div>
+  <div class="content">
+    <label onclick="openSidebar()" id="openBtn" class="burger" for="burger">
+      <input type="checkbox" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+ 
+  </div>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <video id="gameOverVideo" width="320" height="240" controls>
+  <source src="koceng.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+    <button id="moveLeft">←</button>
+    <button id="moveRight">→</button>
+   
+    
+    <button class="start" onclick="gameLoop()">Start</button>
+
+    <script src="main.js"></script>
+</body>
+</html>
